@@ -5,9 +5,7 @@ import android.graphics.Paint;
 import java.util.Random;
 
 
-/**
- * Created by khamisbuol on 5/4/18.
- */
+
 
 public class Ball extends Sprite {
 
