@@ -5,9 +5,6 @@ import android.graphics.Paint;
 
 import java.util.ArrayList;
 
-/**
- * Created by khamisbuol on 11/4/18.
- */
 
 public class Rackets extends ArrayList<Racket> {
 
