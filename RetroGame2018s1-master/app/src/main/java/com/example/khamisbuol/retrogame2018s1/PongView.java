@@ -10,9 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 
-/**
- * Created by khamisbuol on 11/4/18.
- */
+
 
 public class PongView extends View implements View.OnTouchListener, Runnable {
     public static final int DEFAULTCOLOUR = Color.WHITE;
@@ -37,7 +35,6 @@ public class PongView extends View implements View.OnTouchListener, Runnable {
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         float w = (float) v.getWidth();
-        // float h = (float) v.getHeight();
 
         game.touch(event.getX() / w);
         return true;
@@ -50,9 +47,6 @@ public class PongView extends View implements View.OnTouchListener, Runnable {
 
     public boolean step() {
         game.step();
-//        game.trackBall();
-//        game.updateScore();
-//        game.increaseWidth();
         if (game.gameWon()) {
             Context context = this.getContext();
             while (!(context instanceof GameActivity))
