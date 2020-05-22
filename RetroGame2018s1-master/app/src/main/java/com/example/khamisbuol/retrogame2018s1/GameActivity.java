@@ -22,8 +22,6 @@ public class GameActivity extends AppCompatActivity implements Serializable{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
     }
@@ -35,27 +33,4 @@ public class GameActivity extends AppCompatActivity implements Serializable{
         startActivity(intent);
         finish();
     }
-
-
-
-
-    /**public static void main(String[] args) {
-        // create watched and watcher objects
-        GameObserver watched = new GameObserver();
-        // watcher object listens to object change
-        GameActivity watcher = new GameActivity();
-
-        // add observer to the watched object
-        watched.addObserver(watcher);
-    }**/
-
-    /**@Override
-    public void update(Observable observable, Object message) {
-        Intent intent = new Intent(this, WelcomeActivity.class);
-        startActivity(intent);
-    }**/
-
-
-
-
 }
