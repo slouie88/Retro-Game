@@ -5,9 +5,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 
 
-/**
- * Created by khamisbuol on 7/4/18.
- */
 
 public class Game {
 
