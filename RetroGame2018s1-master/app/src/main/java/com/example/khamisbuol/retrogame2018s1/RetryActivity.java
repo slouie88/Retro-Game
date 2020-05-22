@@ -44,7 +44,6 @@ public class RetryActivity extends AppCompatActivity {
         scoreTV.setText("Your Score (Player/AI): "+score);
 
 
-        //save(scoreStr);
         // Check if the current score was a new high score, if yes, then update it in HighScore.txt
         String highScore = load();
         System.out.println("THIS IS MEANT TO BE SAVED SCORE "+highScore);
@@ -121,85 +120,4 @@ public class RetryActivity extends AppCompatActivity {
         return savedHighScore;
     }
 
-    /*public static void saveOnFile(float score) {
-        try {
-            File root = new File(getExternalStorageDirectory(), "Storage");
-            System.out.println("Does the folder exist?"+root.exists());
-            if (!root.exists()){
-                root.mkdir();
-            }
-            System.out.println("Does the folder exist?"+root.exists());
-            File filepath = new File(root, "HighScore.txt");
-
-            FileWriter writer = new FileWriter(filepath);
-            writer.write(score+"");
-            writer.flush();
-            writer.close();
-
-            //PrintWriter writer = new PrintWriter("HighScore.txt", "UTF-8");
-            //writer.println(score+"");
-            //writer.close();
-
-        } catch (FileNotFoundException e) {
-            System.out.println("Save: Unable to open file HighScore.txt");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static float loadFromFile(){
-        String line = null;
-        String savedScore = "";
-
-        try {
-            FileReader fileReader = new FileReader("HighScore.txt");
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-            while((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
-                savedScore = line;
-            }
-
-            // Always close files.
-            bufferedReader.close();
-        }
-        catch(FileNotFoundException ex) {
-            System.out.println("Read: Unable to open file HighScore.txt");
-        }
-        catch(IOException ex) {
-            System.out.println("Error reading file HighScore.txt");
-        }
-        float highScore = Float.valueOf(savedScore);
-        return highScore;
-    }*/
-
-    /*public void saveAndLoad(String Score){
-        // Saving
-        float score = Float.valueOf(Score);
-        HighScore hs = new HighScore(score);
-        FileOutputStream fos = null;
-        ObjectOutputStream out = null;
-        try {
-            fos = new FileOutputStream("HighScore.ser");
-            out = new ObjectOutputStream(fos);
-            out.writeObject(hs);
-            out.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-
-        //Loading
-        FileInputStream fis = null;
-        ObjectInputStream in = null;
-        try {
-            fis = new FileInputStream("HighScore.ser");
-            in = new ObjectInputStream(fis);
-            hs = (HighScore) in.readObject();
-            in.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }*/
 }
