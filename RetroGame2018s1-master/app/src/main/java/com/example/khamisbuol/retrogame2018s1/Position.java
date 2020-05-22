@@ -1,8 +1,5 @@
 package com.example.khamisbuol.retrogame2018s1;
 
-/**
- * Created by khamisbuol on 5/4/18.
- */
 
 public class Position {
     float xpos;
