@@ -5,9 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 
 
-/**
- * Created by khamisbuol on 5/4/18.
- */
+
 
 public class Racket extends Sprite {
     // Define parameters for drawing rectangle/racket (positions are relative to the width and height of the canvas)
@@ -40,7 +38,6 @@ public class Racket extends Sprite {
         // Get the width and height of the canvas
         int w = c.getWidth();
         int h = c.getHeight();
-        //c.drawRect(w-1, h/2, w, h/3, p);
 
         // Obtain the current position of the racket and calculate the change in x-position
         float currentx = pos.xpos;
