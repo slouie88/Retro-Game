@@ -1,4 +1,4 @@
-package com.example.khamisbuol.retrogame2018s1;
+package com.example.stefanlouie.retrogame;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

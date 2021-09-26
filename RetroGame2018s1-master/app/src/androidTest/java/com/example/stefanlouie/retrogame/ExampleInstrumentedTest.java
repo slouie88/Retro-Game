@@ -1,4 +1,4 @@
-package com.example.khamisbuol.retrogame2018s1;
+package com.example.stefanlouie.retrogame;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

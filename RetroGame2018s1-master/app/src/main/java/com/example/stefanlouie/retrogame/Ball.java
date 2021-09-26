@@ -1,10 +1,7 @@
-package com.example.khamisbuol.retrogame2018s1;
+package com.example.stefanlouie.retrogame;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import java.util.Random;
-
-
 
 
 public class Ball extends Sprite {

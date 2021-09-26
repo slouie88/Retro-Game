@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.khamisbuol.retrogame2018s1.GameActivity">
+    tools:context="com.example.stefanlouie.retrogame.GameActivity">
 
-    <com.example.khamisbuol.retrogame2018s1.PongView
+    <com.example.stefanlouie.retrogame.PongView
         android:id="@+id/spaceview"
         android:layout_width="wrap_content"
         android:background="@android:color/black"

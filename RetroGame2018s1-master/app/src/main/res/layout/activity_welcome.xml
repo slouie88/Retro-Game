@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context="com.example.khamisbuol.retrogame2018s1.WelcomeActivity">
+    tools:context="com.example.stefanlouie.retrogame.WelcomeActivity">
 
     <Button
         android:id="@+id/button"
